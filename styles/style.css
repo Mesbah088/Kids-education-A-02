@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* common css  start*/
+.container {
+    max-width: 1600px;
+    font-family: "Quicksand", serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 24px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo>img {
+    /* Group */
+    width: 25px;
+    height: 25px;
+    left: 74.86%;
+    right: 5.9%;
+    top: 241.67%;
+    bottom: -178.6%;
+}
+
+.logo>h2 {
+    text-align: center;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.list>ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+#H {
+    color: Orange;
+}
+
+#AB {
+    color: rgb(1, 172, 253);
+}
+
+#F {
+    color: rgb(5, 212, 223);
+}
+
+#AD {
+    color: rgb(93, 88, 239);
+}
+
+.contact>button {
+    background-color: Orange;
+    font-family: "Quicksand", serif;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    margin: auto;
+    padding: 10px;
+    border: none;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo>h4 {
+        display: none;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
+
+
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    Width: 1200px ;
+    Height: 576px;
+     gap: 65px;
+     margin-right: 70px;
+    padding: 80px 100px 80px 100px;
+}
+.left{
+    text-align: left;
+    text-align: left;
+    margin-right: 70px;
+}
+.left > h6 {
+     color: rgb(17, 17, 17);
+     margin-top: 24px;
+
+}
+
+.left > button{
+    background-color: rgb(17, 17, 17);
+    font-family: "Quicksand", serif;
+    border-radius: 12px;
+    align-items: left;
+    gap: 10;
+    margin: 24px;
+    padding: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
