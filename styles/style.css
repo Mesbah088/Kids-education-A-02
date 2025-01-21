@@ -22,7 +22,8 @@ nav {
     align-items: center;
     padding: 24px 24px;
 }
-.menubar{
+
+.menubar {
     display: none;
 }
 
@@ -90,20 +91,22 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-     gap: 12px;
+    gap: 12px;
 }
-.left{
+
+.left {
     text-align: left;
     text-align: left;
-    
-}
-.left > h6 {
-     color: rgb(17, 17, 17);
-     margin-top: 24px;
 
 }
 
-.left > button{
+.left>h6 {
+    color: rgb(17, 17, 17);
+    margin-top: 24px;
+
+}
+
+.left>button {
     background-color: rgb(17, 17, 17);
     font-family: "Quicksand", serif;
     border-radius: 12px;
@@ -118,20 +121,196 @@ nav {
 
 /*******************************************************
 **********************std_curiculam********************/
-.std_curiculam{
-  background-image: url(./assets/bg.png);
-  height: 500px;
+.std_curiculam {
+    background-image: url(./assets/bg.png);
+
+    padding: 60px 0;
 
 }
+
+.section-tittle h1 {
+    font-family: "Quicksand", serif;
+    Font-weight: 700;
+    Font-size: 46px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28.29px;
+
+}
+
+.card {
+    padding: 40px;
+    text-align: center;
+    border-radius: 19px;
+
+}
+
+.card-content {
+    margin-top: 32px;
+
+}
+
+.card-content h1 {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    background-color: rgb(32, 32, 32);
+}
+
+.card-content p {
+    color: rgb(128, 128, 128);
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    margin: 33px 0;
+}
+
+
+.card-content button {
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    background: none;
+}
+
+.card-1 {
+    background: linear-gradient(to bottom, rgb(222, 245, 255), rgba(255, 255, 255, 0));
+
+}
+
+.card-2 {
+    background: linear-gradient(to bottom, rgb(255, 244, 220),
+            rgba(255, 255, 255, 0));
+
+}
+
+.card-3 {
+    background: linear-gradient(to bottom, rgb(238, 225, 255),
+            rgba(255, 255, 255, 0));
+
+}
+
+.card-1 button {
+    color: rgb(100, 200, 255);
+}
+
+.card-2 button {
+    color: rgb(240, 170, 0);
+}
+
+.card-3 button {
+    color: rgb(135, 0, 255);
+}
+
+.aro-icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.aro-icon svg {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+/*******************************************************
+**********************stories********************/
+.stories-section {
+
+    text-align: center;
+    padding: 2rem;
+}
+
+.story {
+    background-image: url(./assets/bg.png);
+    font-family: "Quicksand", serif;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+
+}
+
+.stories-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.story {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.story img {
+    width: 100%;
+    height: auto;
+}
+
+.date {
+    display: block;
+    background-color: #26c281;
+    color: #fff;
+    font-size: 0.875rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: 1rem;
+    text-align: center;
+    width: fit-content;
+}
+
+.story h2 {
+    font-size: 1.25rem;
+    margin: 1rem;
+}
+
+.story p {
+    font-size: 0.9rem;
+    margin: 1rem;
+    color: #666;
+}
+
+.str {
+    background-color: black;
+    font-family: "Quicksand", serif;
+    color: #fff;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 50%;
+    padding: 10px;
+    border-radius: 12px;
+
+}
+
 @media screen and (max-width: 576px) {
     .banner {
-       
+
         flex-direction: column-reverse;
         align-items: center;
-         gap: 12px;
+        gap: 12px;
     }
-    .logo{
-         display: flex;
+
+    .logo {
+        display: flex;
     }
 
     .logo>h4 {
@@ -145,12 +324,57 @@ nav {
     .contact-btn {
         display: none;
     }
-    .left{
+
+    .left {
         text-align: center;
     }
-    .left button{
+
+    .left button {
         display: inline-block;
     }
 
+    .menubar {
+        display: block;
+    }
+
+    /*******************************************************
+**********************std_curiculam********************/
+    .card-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 28.29px;
+
+    }
+
+    .aro-icon {
+        display: none;
+    }
 }
 
+
+/*******************************************************
+**********************kids_edu********************/
+.kids-edu_section{
+    background-color: rgb(1, 172, 253);
+
+    
+}
+.logo-edu{
+    display: flex;
+    flex-direction: row;
+}
+.kids-edu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    padding: 123px 174px 228px 140px;
+}
+.li{
+    list-style-type: none;
+}
+.para{
+    margin-top: 35px;
+}
