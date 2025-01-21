@@ -22,10 +22,14 @@ nav {
     align-items: center;
     padding: 24px 24px;
 }
+.menubar{
+    display: none;
+}
 
 .logo {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .logo>img {
@@ -66,7 +70,7 @@ nav {
     color: rgb(93, 88, 239);
 }
 
-.contact>button {
+.contact-btn button {
     background-color: Orange;
     font-family: "Quicksand", serif;
     border-radius: 12px;
@@ -79,42 +83,19 @@ nav {
     color: aliceblue;
 }
 
-@media screen and (max-width: 576px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-    }
 
-    .logo>h4 {
-        display: none;
-    }
-
-    .list {
-        display: none;
-    }
-
-    .contact {
-        display: none;
-    }
-
-
-}
 
 .banner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    Width: 1200px ;
-    Height: 576px;
-     gap: 65px;
-     margin-right: 70px;
-    padding: 80px 100px 80px 100px;
+     gap: 12px;
 }
 .left{
     text-align: left;
     text-align: left;
-    margin-right: 70px;
+    
 }
 .left > h6 {
      color: rgb(17, 17, 17);
@@ -128,9 +109,48 @@ nav {
     border-radius: 12px;
     align-items: left;
     gap: 10;
-    margin: 24px;
+    margin: 24px 0;
     padding: 10px;
     border: none;
     color: rgb(255, 255, 255);
+}
+
+
+/*******************************************************
+**********************std_curiculam********************/
+.std_curiculam{
+  background-image: url(./assets/bg.png);
+  height: 500px;
+
+}
+@media screen and (max-width: 576px) {
+    .banner {
+       
+        flex-direction: column-reverse;
+        align-items: center;
+         gap: 12px;
+    }
+    .logo{
+         display: flex;
+    }
+
+    .logo>h4 {
+        display: none;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .contact-btn {
+        display: none;
+    }
+    .left{
+        text-align: center;
+    }
+    .left button{
+        display: inline-block;
+    }
+
 }
 
